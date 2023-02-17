@@ -31,22 +31,23 @@ header {
         margin: 0;
     }
 
-    li {
-        flex: 1;
-        transition: 0.3s;
-        height: 70%;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
+}
 
-        &:hover {
-            background: $mainColor_2;
+.router-lister {
+    flex: 1;
+    transition: 0.3s;
+    height: 70%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
-            a {
-                color: $mainColor_1;
-            }
+    &:hover {
+        background: $mainColor_2;
+
+        a {
+            color: $mainColor_1;
         }
     }
 }

@@ -6,7 +6,7 @@
         <img class="logo-image" src="../../../../assets/img/logo/logo.png" alt="">
         <div class="pages-router">
             <ul>
-                <li *ngFor="let item of pages" matRipple [matRippleColor]="myColor">
+                <li class="router-lister" *ngFor="let item of pages" matRipple [matRippleColor]="myColor">
                     <a routerLink="{{item.path}}">{{item.name}}</a>
                 </li>
             </ul>

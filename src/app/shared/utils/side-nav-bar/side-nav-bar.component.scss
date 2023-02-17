@@ -1,4 +1,5 @@
 @import "/src/assets/css/main.scss";
+@import "/src/app/shared/utils/header/header.component.scss";
 
 .nav-bar-section {
     top: 70px;
@@ -10,4 +11,19 @@
     max-width: 400px;
     background: $mainColor_1;
     height: 89.5vh;
+}
+
+.router-lister {
+    height: 50px !important;
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+
+/* Media queries responsive website */
+
+@media screen and (min-width: 800px) {
+    .nav-bar-section {
+        display: none;
+    }
 }

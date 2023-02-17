@@ -1,0 +1,13 @@
+@import "/src/assets/css/main.scss";
+
+.nav-bar-section {
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 100;
+    max-width: 400px;
+    background: $mainColor_1;
+    height: 89.5vh;
+}

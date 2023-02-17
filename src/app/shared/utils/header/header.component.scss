@@ -1,0 +1,90 @@
+@import "/src/assets/css/main.scss";
+
+header {
+    width: 100%;
+    height: 70px;
+    background: $mainColor_1;
+}
+
+.logo-image {
+    width: 70px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pages-router {
+    width: 40%;
+    height: 100%;
+    display: block;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        height: 100%;
+        margin: 0;
+    }
+
+    li {
+        flex: 1;
+        transition: 0.3s;
+        height: 70%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            background: $mainColor_2;
+
+            a {
+                color: $mainColor_1;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $mainColor_2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu-button {
+    display: none;
+
+    mat-icon {
+        color: $mainColor_2;
+    }
+}
+
+/* Media queries responsive website */
+
+@media screen and (max-width: 800px) {
+    .pages-router {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+}

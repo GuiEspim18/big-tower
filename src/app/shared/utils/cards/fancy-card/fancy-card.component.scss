@@ -1,0 +1,34 @@
+@import "/src/assets/css/main/main.scss";
+
+.card-body {
+    padding: 3rem;
+    background: $secondary_6;
+    border: solid 1px $secondary_5;
+    margin: 3rem 0px;
+
+    h2 {
+        font-family: 'Monsieur La Doulaise', cursive;
+        font-size: 3rem;
+        text-align: start;
+        font-weight: 500 !important;
+        color: $secondary_5;
+        line-height: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        text-align: start;
+        font-weight: 300 !important;
+        color: $secondary_5;
+        margin-top: 1rem;
+        line-height: 3rem;
+    }
+
+    p {
+        color: $secondary_5;
+    }
+
+    mat-divider {
+        background-color: $secondary_5;
+    }
+}

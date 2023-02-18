@@ -1,4 +1,4 @@
-@import "/src/assets/css/main.scss";
+@import "/src/assets/css/main/main.scss";
 @import "/src/app/shared/utils/header/header.component.scss";
 
 .nav-bar-section {
@@ -6,7 +6,7 @@
     left: 0px;
     right: 0px;
     bottom: 0px;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     max-width: 400px;
     background: $mainColor_1;

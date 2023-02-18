@@ -1,0 +1,17 @@
+<section class="carousel-body" [ngStyle]="{'background-color': carouselBodyColor}">
+    <section class="carousel-holder" [ngStyle]="{'background-image': selected ? 'url(' + selected.src +')' : ''}">
+        <div class="command-div">
+            <button mat-icon-button (click)="prev()">
+                <mat-icon>chevron_left</mat-icon>
+            </button>
+        </div>
+        <div class="badge-div">
+            <span class="carousel-badge" matRipple [matRippleColor]="myColor" *ngFor="let item of images" (click)="selectImage(item)" [ngClass]="{'selected-badge': selected === item}"></span>
+        </div>
+        <div class="command-div">
+            <button mat-icon-button (click)="next()">
+                <mat-icon>chevron_right</mat-icon>
+            </button>
+        </div>
+    </section>
+</section>

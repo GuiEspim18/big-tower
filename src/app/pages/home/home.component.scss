@@ -1,0 +1,41 @@
+@import "/src/assets/css/main/main.scss";
+
+.home-content {
+    padding: 2rem 0;
+}
+
+.main-home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    h2, p {
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
+    }
+
+    h1.main-title {
+        font-family: 'Monsieur La Doulaise', cursive;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .divider {
+        margin: 2rem 0px;
+
+        mat-divider {
+            background-color: $mainColor_1;
+        }
+    }
+}
+
+.sub-home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}

@@ -35,7 +35,10 @@ $big-tower-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+@import "/src/assets/css/fonts/fonts.scss";
+@import "/src/assets/css/main/main.scss";
+
+html, body { height: 100%; background-color: $mainColor_2; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
 
@@ -52,4 +55,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
 a {
   font-size: 1rem;
+}
+
+
+// global font styles
+
+h2 {
+  font-size: 2.5rem !important;
+  line-height: 3rem;
+  font-weight: 400 !important;
+}
+
+p {
+  font-size: 1.5rem !important;
+  line-height: 2rem;
+  font-weight: 300;
 }

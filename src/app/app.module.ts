@@ -9,13 +9,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './shared/modules/angular-material/angular-material.module';
 import { ImportsModule } from './shared/modules/imports/imports.module';
 import { SideNavBarComponent } from './shared/utils/side-nav-bar/side-nav-bar.component';
+import { CarouselComponent } from './shared/components/carousel/carousel.component';
+import { FancyCardComponent } from './shared/utils/cards/fancy-card/fancy-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    SideNavBarComponent
+    SideNavBarComponent,
+    CarouselComponent,
+    FancyCardComponent
   ],
   imports: [
     BrowserModule,

@@ -3,14 +3,16 @@ import { CommonModule } from '@angular/common';
 import { MatRippleModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider'
 
 const materialModules: Array<any> = [
   CommonModule,
   MatRippleModule,
   MatButtonModule,
   MatIconModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatDividerModule
 ]
 
 @NgModule({

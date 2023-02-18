@@ -1,19 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-fancy-card',
-  templateUrl: './fancy-card.component.html',
-  styleUrls: ['./fancy-card.component.scss']
+  selector: 'app-dark-fancy-card',
+  templateUrl: './dark-fancy-card.component.html',
+  styleUrls: ['./dark-fancy-card.component.scss']
 })
-export class FancyCardComponent implements OnInit {
+export class DarkFancyCardComponent implements OnInit {
 
   /* Vars */
 
   @Input() title: string = "";
 
   @Input() subTitle: string ="";
-
-  @Input() content: string ="";
 
   constructor() { }
 

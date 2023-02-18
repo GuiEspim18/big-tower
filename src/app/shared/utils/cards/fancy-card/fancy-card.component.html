@@ -1,12 +1,12 @@
 <section class="card-body">
-    <div>
+    <div *ngIf="title.length>0">
         <h2>{{title}}</h2>
         <mat-divider></mat-divider>
     </div>
-    <div>
+    <div *ngIf="subTitle.length>0">
         <h3>{{subTitle}}</h3>
     </div>
-    <div>
+    <div *ngIf="content.length>0">
         <p>{{content}}</p>
     </div>
 </section>

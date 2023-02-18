@@ -2,12 +2,12 @@
 
 .home-content {
     padding: 2rem 0;
+    height: 100%;
 }
 
 .main-home-content {
     max-width: 1200px;
     margin: 0 auto;
-    height: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
 
@@ -23,12 +23,13 @@
         font-weight: 500;
     }
 
-    .divider {
-        margin: 2rem 0px;
+}
 
-        mat-divider {
-            background-color: $mainColor_1;
-        }
+.divider {
+    margin: 2rem 0px;
+
+    mat-divider {
+        background-color: $mainColor_1;
     }
 }
 

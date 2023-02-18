@@ -1,16 +1,18 @@
-<header>
-    <section class="container">
-        <button mat-icon-button class="menu-button" (click)="toggle()">
-            <mat-icon>menu</mat-icon>
-        </button>
-        <img class="logo-image" src="../../../../assets/img/logo/logo.png" alt="">
-        <div class="pages-router">
-            <ul>
-                <li class="router-lister" *ngFor="let item of pages" matRipple [matRippleColor]="myColor">
-                    <a routerLink="{{item.path}}">{{item.name}}</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-</header>
-<app-side-nav-bar [show]="show"></app-side-nav-bar>
+<section class="header-holder">
+    <header>
+        <section class="container">
+            <button mat-icon-button class="menu-button" (click)="toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <img class="logo-image" src="../../../../assets/img/logo/logo.png" alt="">
+            <div class="pages-router">
+                <ul>
+                    <li class="router-lister" *ngFor="let item of pages" matRipple [matRippleColor]="myColor">
+                        <a routerLink="{{item.path}}">{{item.name}}</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <app-side-nav-bar [show]="show"></app-side-nav-bar>
+</section>

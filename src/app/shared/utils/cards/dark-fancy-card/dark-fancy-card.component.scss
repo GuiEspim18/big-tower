@@ -1,0 +1,38 @@
+@import "/src/assets/css/main/main.scss";
+
+.card-body {
+    padding: 3rem;
+    background: $secondary_2;
+    margin: 3rem 0px;
+
+    .card-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 3rem;
+        text-align: start;
+        font-weight: 500 !important;
+        color: $secondary_5;
+        line-height: 3.5rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        text-align: start;
+        font-weight: 200 !important;
+        color: $secondary_5;
+        margin-top: 1rem;
+        line-height: 2.5rem;
+    }
+
+    p {
+        color: $secondary_5;
+    }
+
+    mat-divider {
+        background-color: $secondary_5;
+    }
+}

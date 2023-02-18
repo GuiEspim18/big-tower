@@ -17,7 +17,11 @@ export class HomeComponent implements OnInit {
 
   public readonly subTitle: string = "Uma estrutura diferenciada";
 
-  public readonly content: string = "Disponibilizamos um amplo terraço aberto para você fotografar e filmar seus melhores momentos."
+  public readonly content: string = "Disponibilizamos um amplo terraço aberto para você fotografar e filmar seus melhores momentos.";
+
+  public readonly darkTitle: string = "Faça a sua reserva!";
+
+  public readonly darkSubTitle: string = "Agende seu evento ou festa conosco!"
 
   constructor() { }
 

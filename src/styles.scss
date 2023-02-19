@@ -38,7 +38,7 @@ $big-tower-theme: mat.define-light-theme((
 @import "/src/assets/css/fonts/fonts.scss";
 @import "/src/assets/css/main/main.scss";
 
-html, body { height: 100%; background-color: $mainColor_2; }
+html, body { height: 100%; background-color: $secondary_2; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
 
@@ -69,5 +69,26 @@ h2 {
 p {
   font-size: 1.5rem !important;
   line-height: 2rem;
-  font-weight: 300;
+}
+
+// scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $secondary_2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary_1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary_1;
 }

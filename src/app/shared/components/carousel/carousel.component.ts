@@ -10,7 +10,7 @@ export class CarouselComponent implements OnInit {
 
   /* Vars */
 
-  @Input() public carouselBodyColor: string = "#292929";
+  @Input() public bodyColor: string = "#292929";
 
   @Input() public images: Array<any> = new Array();
 

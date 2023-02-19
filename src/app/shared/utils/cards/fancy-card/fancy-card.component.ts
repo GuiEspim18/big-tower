@@ -9,16 +9,15 @@ export class FancyCardComponent implements OnInit {
 
   /* Vars */
 
-  @Input() title: string = "";
+  @Input() public title: string = "";
 
-  @Input() subTitle: string ="";
+  @Input() public text: string = "";
 
-  @Input() content: string ="";
 
   constructor() { }
 
 
-  /* On init */
+  /* On Init */
 
   ngOnInit(): void {
   }

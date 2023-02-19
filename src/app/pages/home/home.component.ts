@@ -13,15 +13,15 @@ export class HomeComponent implements OnInit {
 
   public readonly carouselImages: Array<CarouselImages> = carouselImages;
 
-  public readonly title: string = "Espaço La Torre";
+  public readonly fancyCardTitle: string = "Uma estrutura diferenciada";
 
-  public readonly subTitle: string = "Uma estrutura diferenciada";
-
-  public readonly content: string = "Disponibilizamos um amplo terraço aberto para você fotografar e filmar seus melhores momentos.";
+  public readonly fancyCardText: string = "Disponibilizamos um amplo terraço aberto para você fotografar e filmar seus melhores momentos.";
 
   public readonly darkTitle: string = "Faça a sua reserva!";
 
-  public readonly darkSubTitle: string = "Agende seu evento ou festa conosco!"
+  public readonly darkSubTitle: string = "Agende seu evento ou festa conosco!";
+
+  public readonly bodyColor: string = "#222222";
 
   constructor() { }
 

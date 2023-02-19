@@ -11,7 +11,6 @@ import { ImportsModule } from './shared/modules/imports/imports.module';
 import { SideNavBarComponent } from './shared/utils/side-nav-bar/side-nav-bar.component';
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
 import { FancyCardComponent } from './shared/utils/cards/fancy-card/fancy-card.component';
-import { DarkFancyCardComponent } from './shared/utils/cards/dark-fancy-card/dark-fancy-card.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { DarkFancyCardComponent } from './shared/utils/cards/dark-fancy-card/dar
     HeaderComponent,
     SideNavBarComponent,
     CarouselComponent,
-    FancyCardComponent,
-    DarkFancyCardComponent
+    FancyCardComponent
   ],
   imports: [
     BrowserModule,

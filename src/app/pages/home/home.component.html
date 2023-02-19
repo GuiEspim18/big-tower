@@ -1,32 +1,23 @@
 <section>
     <app-header></app-header>
     <section>
-        <app-carousel [images]="carouselImages"></app-carousel>
+        <app-carousel [images]="carouselImages" [bodyColor]="bodyColor"></app-carousel>
     </section>
     <section class="home-content">
-        <section class="main-home-content">
-            <div>
-                <h1 class="main-title">Espaço La Torre</h1>
+        <section class="container">
+            <mat-divider></mat-divider>
+            <div class="div-text">
+                <div class="box-text">
+                    <h1>Espaço La Torre</h1>
+                    <p>O La Torre possui um espaço clean, aconchegante, versátil e perfeito para a realização da sua festa
+                        ou evento. Oferecemos dois ambientes climatizados que permite personalização conforme o tema da
+                        festa. Acomodamos 180 pessoas, sendo 115 no piso inferior e 65 no piso superior.</p>
+                </div>
+                <div class="box-image">
+                    <img src="../../../assets/img/image1.jpeg" alt="site-image">
+                </div>
             </div>
-            <div class="divider">
-                <mat-divider></mat-divider>
-            </div>
-            <div>
-                <h2>Venha fazer a sua festa ou evento conosco!</h2>
-                <p>O La Torre possui um espaço clean, aconchegante, versátil e perfeito para a realização da sua festa ou evento. Oferecemos dois ambientes climatizados que permite personalização conforme o tema da festa. Acomodamos 180 pessoas, sendo 115 no piso inferior e 65 no piso superior.</p>
-            </div>
-            <div class="divider">
-                <mat-divider></mat-divider>
-            </div>
-        </section>
-        <section class="sub-home-content">
-            <app-fancy-card [title]="title" [subTitle]="subTitle" [content]="content"></app-fancy-card>
-            <div class="divider">
-                <mat-divider></mat-divider>
-            </div>
-        </section>
-        <section>
-            <app-dark-fancy-card [title]="darkTitle" [subTitle]="darkSubTitle"></app-dark-fancy-card>
+            <app-fancy-card [title]="fancyCardTitle" [text]="fancyCardText"></app-fancy-card>
         </section>
     </section>
 </section>

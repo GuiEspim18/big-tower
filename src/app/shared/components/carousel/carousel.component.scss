@@ -8,7 +8,6 @@
 .carousel-holder {
     max-width: 1200px;
     margin: 0 auto;
-    background: #353535;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -52,7 +51,7 @@
     align-items: center;
 
     button {
-        background: $secondary_3;
+        background: $shadow_1;
         width: 3rem;
         height: 3rem;
         display: flex;

@@ -92,3 +92,35 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   background: $secondary_1;
 }
+
+
+// input div
+
+.input-div {
+  background: $mainColor_2;
+  display: block !important;
+  max-width: 220px !important;
+
+  .label {
+    padding: 0px 2rem;
+  }
+
+  .input {
+    display: flex;
+    align-items: center;
+    padding: 0px 2rem;
+
+    label {
+      margin: 0 !important;
+    }
+  
+    input {
+      height: 100%;
+      margin: 0 !important;
+    }
+
+    mat-datepicker-toggle {
+      width: 30px;
+    }
+  }
+}

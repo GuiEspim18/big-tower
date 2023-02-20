@@ -1,0 +1,54 @@
+@import "/src/assets/css/main/main.scss";
+
+.card-body {
+    background-color: $mainColor_2;
+    border: solid 2px $mainColor_1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1rem 0px;
+
+    .card-content {
+        padding: 2rem;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 3.4rem;
+        }
+
+        mat-divider {
+            margin: 2rem 0;
+        }
+
+        p {
+            font-size: 1rem !important;
+            font-weight: 300 !important; 
+        }
+
+        .image-text {
+            color: $mainColor_3 !important;
+            text-shadow: 0 0 1rem $shadow_2;
+        }
+
+        .no-image-text {
+            color: $mainColor_1;
+        }
+
+        .image-background {
+            background: $mainColor_3 !important;
+        }
+
+        .no-image-background {
+            background: $mainColor_1;
+        }
+
+    }
+
+    .card-image-content {
+        background-color: $shadow_2 !important;
+        backdrop-filter: grayscale(100%) !important;
+        -webkit-backdrop-filter: grayscale(100%) !important;
+    }
+
+}

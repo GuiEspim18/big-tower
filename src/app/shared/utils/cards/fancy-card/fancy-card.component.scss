@@ -1,23 +1,24 @@
 @import "/src/assets/css/main/main.scss";
 
 .card-body {
-    background-color: $secondary_6;
-    border: solid 2px $secondary_5;
+    background-color: $secondary_5;
+    border: solid 2px $mainColor_1;
     padding: 2rem;
     
     h1 {
-        color: $secondary_5;
+        color: $mainColor_2;
         font-size: 3rem;
         font-weight: 300;
+        line-height: 3.4rem;
     }
 
     mat-divider {
         margin: 2rem 0;
-        background-color: $secondary_5;
+        background-color: $mainColor_2;
     }
 
     p {
-        color: $secondary_5;
+        color: $mainColor_2;
         font-weight: lighter !important;
     }
 }

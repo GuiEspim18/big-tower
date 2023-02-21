@@ -7,7 +7,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatDatepickerModule } from '@angular/material/datepicker'
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
 
 const materialModules: Array<any> = [
   CommonModule,
@@ -19,7 +21,9 @@ const materialModules: Array<any> = [
   MatFormFieldModule,
   MatInputModule,
   MatDatepickerModule,
-  MatNativeDateModule 
+  MatNativeDateModule,
+  MatCardModule,
+  MatSelectModule
 ]
 
 @NgModule({

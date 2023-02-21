@@ -1,4 +1,3 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '~@angular/material' as mat;
@@ -20,13 +19,10 @@ $big-tower-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$big-tower-theme: mat.define-light-theme((
-  color: (
-    primary: $big-tower-primary,
-    accent: $big-tower-accent,
-    warn: $big-tower-warn,
-  )
-));
+$big-tower-theme: mat.define-light-theme((color: (primary: $big-tower-primary,
+        accent: $big-tower-accent,
+        warn: $big-tower-warn,
+      )));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -38,8 +34,16 @@ $big-tower-theme: mat.define-light-theme((
 @import "/src/assets/css/fonts/fonts.scss";
 @import "/src/assets/css/main/main.scss";
 
-html, body { height: 100%; background-color: $secondary_2; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+html,
+body {
+  height: 100%;
+  background-color: $secondary_2;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 
 // container
@@ -71,6 +75,7 @@ p {
   line-height: 2rem;
 }
 
+
 // scroll bar
 
 /* width */
@@ -98,29 +103,113 @@ p {
 
 .input-div {
   background: $mainColor_2;
-  display: block !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   max-width: 220px !important;
+  height: 36px;
+  padding: 2px 6px;
+  cursor: pointer;
+  margin: 1rem;
 
-  .label {
-    padding: 0px 2rem;
+  label {
+    margin: 0 !important;
   }
 
-  .input {
-    display: flex;
-    align-items: center;
-    padding: 0px 2rem;
+  input {
+    margin: 0 !important;
+    outline: none;
+    border: none !important;
+    cursor: pointer;
+    color: $secondary_2 !important;
+    background: none;
+    height: 90%;
+    font-size: 1rem;
+    width: 90%;
+  }
 
-    label {
-      margin: 0 !important;
-    }
-  
-    input {
-      height: 100%;
-      margin: 0 !important;
-    }
+  .mat-icon-button {
+    color: $shadow_2;
+  }
 
-    mat-datepicker-toggle {
-      width: 30px;
+  mat-select {
+    width: 232px !important;
+    background: $mainColor_2;
+
+    .mat-select-placeholder {
+      color: $shadow_2;
+      font-size: 1rem;
     }
+  }
+}
+
+
+// Angular material styles
+
+.mat-datepicker-toggle-active {
+  color: $secondary_5;
+}
+
+.mat-calendar-body-selected {
+  background-color: $secondary_5;
+  color: $mainColor_2;
+}
+
+
+// input place holder
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: $shadow_2;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $shadow_2;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $shadow_2;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $shadow_2;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $shadow_2;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: $shadow_2;
+}
+
+
+// Buttons
+
+.submit-button {
+  background: $mainColor_1;
+  color: $mainColor_2;
+  border: none;
+  outline: none;
+  width: 232px;
+  height: 36px;
+  padding: 1.2rem 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: lighter !important;
+  transition: 0.3s;
+
+  &:hover {
+    background: $secondary_2;
   }
 }

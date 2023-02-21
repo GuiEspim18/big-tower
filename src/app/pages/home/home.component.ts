@@ -23,6 +23,12 @@ export class HomeComponent implements OnInit {
 
   public readonly bodyColor: string = "#222222";
 
+  public selected: Date | null
+
+  public readonly minDate: Date = new Date()
+
+  public readonly myColor: string = "#ffffff24";
+
   constructor() { }
 
   ngOnInit(): void {

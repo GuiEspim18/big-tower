@@ -77,12 +77,18 @@
         text-align: center;
     }
 
-    .input-div{
+    .inputs {
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
     }
+
+    .button-div {
+        padding: 2rem 0px;
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 800px) {

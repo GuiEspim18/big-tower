@@ -7,9 +7,17 @@
     background-position: center;
     background-repeat: no-repeat;
     margin: 1rem 0px;
+    min-height: 450px !important;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+        border: solid 1px $mainColor_3;
+    }
 
     .card-content {
         padding: 2rem;
+        min-height: 450px !important;
 
         h1 {
             font-size: 3rem;

@@ -1,0 +1,19 @@
+<footer>
+    <section class="container">
+        <div class="la-torre-copyright">
+            <h1>Espaço La Torre</h1>
+            <p>{{getCopyRight()}}</p>
+        </div>
+        <div class="text-div">
+            <p>Venha, estamos te esperando com o melhor espaço do Jardim Japão para realizar seu casamento, festa infantil ou debutante, evento corporativo dentre outros.</p>
+        </div>
+        <div class="contacts-div">
+            <ul>
+                <li *ngFor="let item of contactsData">
+                    <mat-icon>{{item.icon}}</mat-icon>
+                    <p>{{item.text}}</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</footer>

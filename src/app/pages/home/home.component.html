@@ -1,7 +1,7 @@
 <section>
     <app-header></app-header>
     <section>
-        <app-carousel [images]="carouselImages" [bodyColor]="bodyColor"></app-carousel>
+        <app-carousel [images]="carouselImages"></app-carousel>
     </section>
     <section class="home-content">
         <section class="container">
@@ -49,19 +49,23 @@
                 </div>
 
                 <div class="input-div">
-                    <input name="time" id="time" placeholder="Hora do evento" readonly>
-                    <button mat-icon-button>
+                    <mat-select placeholder="Hora do evento" class="event-hour" #eventHour>
+                        <mat-option value="teste">
+                            teste
+                        </mat-option>
+                        <mat-option value="teste2">
+                            teste2
+                        </mat-option>
+                    </mat-select>
+                    <button mat-icon-button (click)="eventHour.open()">
                         <mat-icon>schedule</mat-icon>
                     </button>
                 </div>
 
                 <div class="input-div">
                     <mat-select placeholder="Número de pessoas">
-                        <mat-option value="teste">
-                            teste
-                        </mat-option>
-                        <mat-option value="teste2">
-                            teste2
+                        <mat-option *ngFor="let item of peopleNumber" [value]="item">
+                            {{item}}
                         </mat-option>
                     </mat-select>
                 </div>
@@ -73,4 +77,5 @@
             </div>
         </form>
     </section>
+    <app-footer></app-footer>
 </section>

@@ -1,4 +1,3 @@
 export interface CarouselImages {
-    src: string;
-    index: number;
+    path: string;
 }

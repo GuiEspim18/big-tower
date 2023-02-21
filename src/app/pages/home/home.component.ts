@@ -3,6 +3,7 @@ import { carouselImages } from 'src/app/shared/utils/variables/carousel-images/c
 import { CarouselImages } from 'src/app/shared/utils/variables/carousel-images/dto/carousel-images.dto';
 import { LightCardsContent } from 'src/app/shared/utils/variables/light-cards-content/dto/light-cards-content.dto';
 import { lightCardsContent } from 'src/app/shared/utils/variables/light-cards-content/light-cards-content';
+import { peopleNumber } from 'src/app/shared/utils/variables/people-number/people-number';
 
 @Component({
   selector: 'app-home',
@@ -19,17 +20,21 @@ export class HomeComponent implements OnInit {
 
   public readonly fancyCardText: string = "Disponibilizamos um amplo terraço aberto para você fotografar e filmar seus melhores momentos.";
 
-  public readonly lightCardsContent: Array<LightCardsContent> = lightCardsContent
+  public readonly lightCardsContent: Array<LightCardsContent> = lightCardsContent;
 
-  public readonly bodyColor: string = "#222222";
+  public selected: Date | null;
 
-  public selected: Date | null
-
-  public readonly minDate: Date = new Date()
+  public readonly minDate: Date = new Date();
 
   public readonly myColor: string = "#ffffff24";
 
+  public readonly peopleNumber: Array<string> = peopleNumber();
+  
+
   constructor() { }
+
+
+  /* On Init */
 
   ngOnInit(): void {
   }

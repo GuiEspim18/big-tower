@@ -12,6 +12,7 @@ import { SideNavBarComponent } from './shared/utils/side-nav-bar/side-nav-bar.co
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
 import { FancyCardComponent } from './shared/utils/cards/fancy-card/fancy-card.component';
 import { LightCardComponent } from './shared/utils/cards/light-card/light-card.component';
+import { FooterComponent } from './shared/utils/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LightCardComponent } from './shared/utils/cards/light-card/light-card.c
     SideNavBarComponent,
     CarouselComponent,
     FancyCardComponent,
-    LightCardComponent
+    LightCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

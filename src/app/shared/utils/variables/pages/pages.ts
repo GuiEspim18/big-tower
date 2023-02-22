@@ -5,7 +5,7 @@ export const pages: Array<any> = [
     },
     {
         name: "Sobre",
-        path: "/home"
+        path: "/about"
     },
     {
         name: "Parceiros",

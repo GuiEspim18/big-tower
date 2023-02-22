@@ -4,17 +4,6 @@
     margin: 5rem 0;
 }
 
-.cards-image-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-
-    .box-card {
-        width: 45%;
-    }
-}
-
 .light-cards-div {
     display: flex;
     justify-content: space-between;
@@ -47,4 +36,22 @@
         width: 100% !important;
     }
 
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    .light-cards-div {
+        margin: 0 5rem !important;
+        justify-content: space-around;
+
+        app-light-card {
+            width: 45% !important; 
+        }
+    }
+    
+}
+
+@media screen and (max-width: 670px) {
+    .light-cards-div app-light-card {
+        width: 100% !important;
+    }
 }

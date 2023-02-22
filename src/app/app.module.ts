@@ -17,6 +17,7 @@ import { ReservationComponent } from './shared/components/reservation/reservatio
 import { ImageAndCardComponent } from './shared/utils/image-and-card/image-and-card.component';
 import { TextAndImageComponent } from './shared/utils/text-and-image/text-and-image.component';
 import { LoopLightCardsComponent } from './shared/utils/cards/loop-light-cards/loop-light-cards.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { LoopLightCardsComponent } from './shared/utils/cards/loop-light-cards/l
     ReservationComponent,
     ImageAndCardComponent,
     TextAndImageComponent,
-    LoopLightCardsComponent
+    LoopLightCardsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

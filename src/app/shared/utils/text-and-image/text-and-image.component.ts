@@ -16,6 +16,16 @@ export class TextAndImageComponent implements OnInit {
   @Input() public image: string = "";
 
   @Input() public wrapReverse: boolean = false;
+
+  @Input() public subTitle: string = "";
+
+  @Input() public fancyTitle: boolean = true;
+
+  @Input() public fancySubTitle: boolean = false;
+
+  @Input() public titleColor: string = "#daa520";
+
+  @Input() public subTitleColor: string = "#eeeeee";
   
 
   constructor() { }

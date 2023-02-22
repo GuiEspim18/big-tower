@@ -13,9 +13,17 @@
     .box-card {
         width: 45%;
     }
+
+    .box-image img {
+        max-width: 600px;
+    }
 }
 
 @media screen and (max-width: 800px) {
+    .cards-div {
+        margin: 2rem !important;
+    }
+
     .box-image {
         width: 100% !important;
         padding: 2rem;
@@ -30,4 +38,37 @@
     .box-card {
         width: 100% !important;
     }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1250px) {
+    .cards-div {
+        margin: 2rem !important;
+    }
+
+    .box-image img {
+        max-width: 500px !important;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    .box-image {
+        width: 100% !important;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 500px;
+        }
+    }
+
+    .box-card {
+        width: 100% !important;
+    }
+
+    .cards-div {
+        margin: 2rem !important;
+    }
+    
 }

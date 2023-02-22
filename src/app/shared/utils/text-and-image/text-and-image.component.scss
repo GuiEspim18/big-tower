@@ -6,14 +6,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
     padding: 2rem 0;
     
     h1 {
-        font-family: Monsieur La Doulaise;
         font-size: 3rem;
-        color: $mainColor_3;
         margin-bottom: 2rem;
+        line-height: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .fancy-font {
+        font-family: Monsieur La Doulaise;
     }
     
     p {
@@ -24,10 +32,22 @@
     .box-text {
         width: 45%;
     }
+
+    .box-image {
+        width: 45%;
+
+        img {
+            max-width: 500px;
+        }
+    }
 }
 
 
 @media screen and (max-width: 800px) {
+
+    .div-text {
+        padding: 2rem;
+    }
 
     .box-text {
         width: 100% !important;
@@ -42,5 +62,46 @@
         img {
             width: 100%;
         }
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1250px) {
+    .div-text {
+        margin: 2rem !important;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .div-text {
+        margin: 2rem !important;
+    }
+
+    .box-text {
+        width: 100% !important;
+    }
+
+    .box-image {
+        width: 100% !important;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    .box-text {
+        width: 100% !important;
+    }
+
+    .box-image {
+        width: 100% !important;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+
     }
 }

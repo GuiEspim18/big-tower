@@ -13,11 +13,12 @@ import { CarouselComponent } from './shared/components/carousel/carousel.compone
 import { FancyCardComponent } from './shared/utils/cards/fancy-card/fancy-card.component';
 import { LightCardComponent } from './shared/utils/cards/light-card/light-card.component';
 import { FooterComponent } from './shared/utils/footer/footer.component';
-import { ReservationComponent } from './shared/components/reservation/reservation.component';
+import { ReservationComponent } from './shared/utils/reservation/reservation.component';
 import { ImageAndCardComponent } from './shared/utils/image-and-card/image-and-card.component';
 import { TextAndImageComponent } from './shared/utils/text-and-image/text-and-image.component';
 import { LoopLightCardsComponent } from './shared/utils/cards/loop-light-cards/loop-light-cards.component';
 import { AboutComponent } from './pages/about/about.component';
+import { DepositionsComponent } from './shared/components/depositions/depositions.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AboutComponent } from './pages/about/about.component';
     ImageAndCardComponent,
     TextAndImageComponent,
     LoopLightCardsComponent,
-    AboutComponent
+    AboutComponent,
+    DepositionsComponent
   ],
   imports: [
     BrowserModule,

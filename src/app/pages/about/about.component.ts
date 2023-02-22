@@ -15,6 +15,14 @@ export class AboutComponent implements OnInit {
 
   public readonly image: string = "assets/img/image3.jpg";
 
+  public readonly flexDirection: string = "row-reverse";
+
+  public readonly title2: string = "Festas e Eventos";
+
+  public readonly text2: string = "O ambiente clean, versátil e aconchegante é ideal para a realização de diversos tipos de festas e eventos tais como: festas infantis, debutante, bodas, chá bar e de bebê, casamentos e cerimoniais, coffee break; confraternizações empresariais entre outros. Estamos localizados no bairro Jardim Japão, na Zona Norte de São Paulo com fácil acesso as principais vias: Dutra e Marginal Tietê.";
+
+  public readonly image2: string = "assets/img/image4.jpg";
+
 
   constructor() { }
 

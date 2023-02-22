@@ -26,6 +26,8 @@ export class TextAndImageComponent implements OnInit {
   @Input() public titleColor: string = "#daa520";
 
   @Input() public subTitleColor: string = "#eeeeee";
+
+  @Input() public flexDirection: string = "row";
   
 
   constructor() { }

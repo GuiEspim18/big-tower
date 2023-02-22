@@ -1,11 +1,11 @@
 <section class="card-body" [ngStyle]="{'background-image': image.length>0 ? 'url(' + image + ')': ''}">
     <div class="card-content" [ngClass]="{'card-image-content': image.length>0}">
         <div>
-            <h1 class="no-image-text" [ngClass]="{'image-text': image.length>0}">{{title}}</h1>
+            <h1 class="no-image-text" *ngIf="title.length>0" [ngClass]="{'image-text': image.length>0, 'fancy-font': fancyTitle}">{{title}}</h1>
         </div>
-        <mat-divider class="no-image-background" [ngClass]="{'image-background': image.length>0}"></mat-divider>
+        <mat-divider *ngIf="title.length>0" class="no-image-background" [ngClass]="{'image-background': image.length>0}"></mat-divider>
         <div>
-            <p class="no-image-text" [ngClass]="{'image-text': image.length>0}">{{text}}</p>
+            <p class="no-image-text" *ngIf="text.length>0" [ngClass]="{'image-text': image.length>0}">{{text}}</p>
         </div>
     </div>
 </section>

@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { DateService } from '../../services/date.service';
 import { WhatsappMessageService } from '../../services/whatsapp-message.service';
-import { Alerts } from '../../utils/alerts/alerts';
-import { eventHours } from '../../utils/variables/event-hours/event-hours';
-import { peopleNumber } from '../../utils/variables/people-number/people-number';
+import { Alerts } from '../alerts/alerts';
+import { eventHours } from '../variables/event-hours/event-hours';
+import { peopleNumber } from '../variables/people-number/people-number';
 
 @Component({
   selector: 'app-reservation',

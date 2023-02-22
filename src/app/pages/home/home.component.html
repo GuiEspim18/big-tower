@@ -1,78 +1,32 @@
 <section>
-    <app-header></app-header>
+
+    <!-- Carousel section -->
     <section>
         <app-carousel [images]="carouselImages"></app-carousel>
     </section>
-    <section class="home-content">
+
+    <!-- Home content -->
+    <section class="content">
         <section class="container">
+
+            <!-- Text and image component -->
             <mat-divider></mat-divider>
-            <div class="div-text">
-                <div class="box-text">
-                    <h1>Espaço La Torre</h1>
-                    <p>O La Torre possui um espaço clean, aconchegante, versátil e perfeito para a realização da sua
-                        festa
-                        ou evento. Oferecemos dois ambientes climatizados que permite personalização conforme o tema da
-                        festa. Acomodamos 180 pessoas, sendo 115 no piso inferior e 65 no piso superior.</p>
-                </div>
-                <div class="box-image">
-                    <img src="assets/img/image1.jpeg" alt="site-image">
-                </div>
-            </div>
-            <div class="cards-div cards-image-div">
-                <div class="box-image">
-                    <img src="assets/img/image2.jpg" alt="">
-                </div>
-                <div class="box-card">
-                    <app-fancy-card [title]="fancyCardTitle" [text]="fancyCardText"></app-fancy-card>
-                </div>
-            </div>
+            <app-text-and-image [title]="textAndImageTitle" [text]="textAndImageText"
+                [image]="textAndImageSrc" ></app-text-and-image>
+
+            <!-- Image and card component -->
+            <app-image-and-card [cardTitle]="fancyCardTitle" [cardText]="fancyCardText"
+                [image]="cardAndImageSrc"></app-image-and-card>
+
+            <!-- Cards components -->
             <mat-divider></mat-divider>
-            <div class="cards-div light-cards-div">
-                <app-light-card *ngFor="let item of lightCardsContent" [title]="item.title" [text]="item.text"
-                    [image]="item.src"></app-light-card>
-            </div>
+            <app-loop-light-cards [lightCardsContent]="lightCardsContent"></app-loop-light-cards>
             <mat-divider></mat-divider>
+
         </section>
     </section>
-    <section class="reservation-body">
-        <form class="container">
-            <div>
-                <h1>Agende seu evento ou festa conosco!</h1>
-            </div>
-            <div class="inputs">
-                <div class="input-div">
-                    <input name="date" id="date" readonly [min]="minDate" placeholder="Data do evento"
-                        [matDatepicker]="basicDatepicker">
-                    <mat-datepicker-toggle [for]="basicDatepicker">
-                    </mat-datepicker-toggle>
-                    <mat-datepicker #basicDatepicker></mat-datepicker>
-                </div>
 
-                <div class="input-div">
-                    <mat-select placeholder="Hora do evento" class="event-hour" #eventHour>
-                        <mat-option *ngFor="let item of eventHours" [value]="item">
-                            {{item}}
-                        </mat-option>
-                    </mat-select>
-                    <button mat-icon-button (click)="eventHour.open()">
-                        <mat-icon>schedule</mat-icon>
-                    </button>
-                </div>
+    <!-- Reservation component -->
+    <app-reservation></app-reservation>
 
-                <div class="input-div">
-                    <mat-select placeholder="Número de pessoas">
-                        <mat-option *ngFor="let item of peopleNumber" [value]="item">
-                            {{item}}
-                        </mat-option>
-                    </mat-select>
-                </div>
-            </div>
-            <div class="button-div">
-                <button class="submit-button" type="submit" matRipple [matRippleColor]="myColor">
-                    Faça o seu orçamento
-                </button>
-            </div>
-        </form>
-    </section>
-    <app-footer></app-footer>
 </section>

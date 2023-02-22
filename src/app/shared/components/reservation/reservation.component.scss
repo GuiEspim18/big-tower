@@ -1,0 +1,34 @@
+@import "/src/assets/css/main/main.scss";
+
+.reservation-body {
+    background: $secondary_5;
+    padding: 2rem 0px;
+
+    
+    h1 {
+        color: $mainColor_2;
+        font-size: 2.5rem !important;
+        line-height: 3rem;
+        font-weight: 300 !important;
+        text-align: center;
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .button-div {
+        padding: 2rem 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .reservation-body {
+        padding: 1rem;
+    }
+}

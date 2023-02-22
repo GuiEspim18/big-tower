@@ -1,0 +1,40 @@
+<section class="reservation-body">
+    <form class="container">
+        <div>
+            <h1>Agende seu evento ou festa conosco!</h1>
+        </div>
+        <div class="inputs">
+            <div class="input-div">
+                <input name="date" id="date" readonly [min]="minDate" placeholder="Data do evento"
+                    [matDatepicker]="basicDatepicker">
+                <mat-datepicker-toggle [for]="basicDatepicker">
+                </mat-datepicker-toggle>
+                <mat-datepicker #basicDatepicker></mat-datepicker>
+            </div>
+
+            <div class="input-div">
+                <mat-select placeholder="Hora do evento" class="event-hour" #eventHour>
+                    <mat-option *ngFor="let item of eventHours" [value]="item">
+                        {{item}}
+                    </mat-option>
+                </mat-select>
+                <button mat-icon-button (click)="eventHour.open()">
+                    <mat-icon>schedule</mat-icon>
+                </button>
+            </div>
+
+            <div class="input-div">
+                <mat-select placeholder="Número de pessoas">
+                    <mat-option *ngFor="let item of peopleNumber" [value]="item">
+                        {{item}}
+                    </mat-option>
+                </mat-select>
+            </div>
+        </div>
+        <div class="button-div">
+            <button class="submit-button" type="submit" matRipple [matRippleColor]="myColor">
+                Faça o seu orçamento
+            </button>
+        </div>
+    </form>
+</section>

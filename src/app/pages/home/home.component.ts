@@ -17,22 +17,20 @@ export class HomeComponent implements OnInit {
 
   public readonly carouselImages: Array<CarouselImages> = carouselImages;
 
-  public readonly fancyCardTitle: string = "Uma estrutura diferenciada";
+  public readonly fancyCardTitle: string = "Uma estrutura diferenciada!";
 
   public readonly fancyCardText: string = "Disponibilizamos um amplo terraço aberto para você fotografar e filmar seus melhores momentos.";
 
   public readonly lightCardsContent: Array<LightCardsContent> = lightCardsContent;
 
-  public selected: Date | null;
+  public readonly cardAndImageSrc: string = "assets/img/image2.jpg";
 
-  public readonly minDate: Date = new Date();
+  public readonly textAndImageTitle: string = "Espaco La Torre";
 
-  public readonly myColor: string = "#ffffff24";
+  public readonly textAndImageText: string = "O La Torre possui um espaço clean, aconchegante, versátil e perfeito para a realização da sua festa ou evento. Oferecemos dois ambientes climatizados que permite personalização conforme o tema da festa. Acomodamos 180 pessoas, sendo 115 no piso inferior e 65 no piso superior.";
 
-  public readonly peopleNumber: Array<string> = peopleNumber();
+  public readonly textAndImageSrc: string = "assets/img/image1.jpeg";
 
-  public readonly eventHours: Array<string> = eventHours();
-  
 
   constructor() { }
 

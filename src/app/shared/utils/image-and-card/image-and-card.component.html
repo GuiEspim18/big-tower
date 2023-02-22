@@ -1,0 +1,8 @@
+<div class="cards-div cards-image-div" [ngStyle]="{'flex-wrap': wrapReverse === true ?' wrap-reverse' : 'wrap'}">
+    <div class="box-image">
+        <img src="{{image}}" alt="">
+    </div>
+    <div class="box-card">
+        <app-fancy-card [title]="cardTitle" [text]="cardText"></app-fancy-card>
+    </div>
+</div>

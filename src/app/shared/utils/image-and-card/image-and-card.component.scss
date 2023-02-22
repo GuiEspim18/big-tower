@@ -1,0 +1,33 @@
+@import "/src/assets/css/main/main.scss";
+
+.cards-div {
+    margin: 5rem 0;
+}
+
+.cards-image-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+    .box-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .box-image {
+        width: 100% !important;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .box-card {
+        width: 100% !important;
+    }
+}

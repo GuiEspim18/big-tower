@@ -50,11 +50,8 @@
 
                 <div class="input-div">
                     <mat-select placeholder="Hora do evento" class="event-hour" #eventHour>
-                        <mat-option value="teste">
-                            teste
-                        </mat-option>
-                        <mat-option value="teste2">
-                            teste2
+                        <mat-option *ngFor="let item of eventHours" [value]="item">
+                            {{item}}
                         </mat-option>
                     </mat-select>
                     <button mat-icon-button (click)="eventHour.open()">

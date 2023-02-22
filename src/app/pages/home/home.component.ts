@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { carouselImages } from 'src/app/shared/utils/variables/carousel-images/carousel-images';
 import { CarouselImages } from 'src/app/shared/utils/variables/carousel-images/dto/carousel-images.dto';
+import { eventHours } from 'src/app/shared/utils/variables/event-hours/event-hours';
 import { LightCardsContent } from 'src/app/shared/utils/variables/light-cards-content/dto/light-cards-content.dto';
 import { lightCardsContent } from 'src/app/shared/utils/variables/light-cards-content/light-cards-content';
 import { peopleNumber } from 'src/app/shared/utils/variables/people-number/people-number';
@@ -29,6 +30,8 @@ export class HomeComponent implements OnInit {
   public readonly myColor: string = "#ffffff24";
 
   public readonly peopleNumber: Array<string> = peopleNumber();
+
+  public readonly eventHours: Array<string> = eventHours();
   
 
   constructor() { }

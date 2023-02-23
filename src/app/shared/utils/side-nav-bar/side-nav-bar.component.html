@@ -1,5 +1,5 @@
 <section class="nav-bar-section" [@collapse]="show">
-    <div class="router-lister" *ngFor="let item of pages" matRipple [matRippleColor]="myColor">
-        <a routerLink="{{item.path}}">{{item.name}}</a>
+    <div class="router-lister" *ngFor="let item of pages" matRipple [matRippleColor]="myColor" routerLink="{{item.path}}" (click)="emit()"> 
+        <a>{{item.name}}</a>
     </div>
 </section>

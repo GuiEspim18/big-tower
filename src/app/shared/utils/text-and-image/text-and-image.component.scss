@@ -45,10 +45,6 @@
 
 @media screen and (max-width: 800px) {
 
-    .div-text {
-        padding: 2rem;
-    }
-
     .box-text {
         width: 100% !important;
     }
@@ -65,16 +61,7 @@
     }
 }
 
-@media screen and (min-width: 1100px) and (max-width: 1250px) {
-    .div-text {
-        margin: 2rem !important;
-    }
-}
-
 @media screen and (min-width: 1100px) and (max-width: 1200px) {
-    .div-text {
-        margin: 2rem !important;
-    }
 
     .box-text {
         width: 100% !important;

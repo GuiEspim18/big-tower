@@ -12,6 +12,7 @@ export class FooterComponent implements OnInit {
   /* Vars */
 
   public readonly contactsData: Array<ContactsData> = contactsData
+  
 
   constructor() { }
 

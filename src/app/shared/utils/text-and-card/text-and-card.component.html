@@ -1,9 +1,10 @@
 <div class="div-text" [ngStyle]="{'flex-wrap': wrapReverse === true ?' wrap-reverse' : 'wrap', 'flex-direction': flexDirection}">
     <div class="box-text">
         <h1 *ngIf="title.length>0" [ngClass]="{'fancy-font': fancyTitle}" [ngStyle]="{'color': titleColor}">{{title}}</h1>
+        <h2 *ngIf="subTitle.length>0" [ngClass]="{'fancy-font': fancySubTitle}" [ngStyle]="{'color': subTitleColor}">{{subTitle}}</h2>
         <p>{{text}}</p>
     </div>
-    <div class="box-image">
-        <img src="{{image}}" alt="site-image">
+    <div class="box-card">
+        <app-address-card></app-address-card>
     </div>
 </div>

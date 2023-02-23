@@ -1,0 +1,32 @@
+@import "/src/assets/css/main/main.scss";
+
+.card-body {
+    background-color: $secondary_5;
+    border: solid 2px $mainColor_1;
+    padding: 2rem;
+
+    .contacts-div ul {
+        list-style: none;
+        padding: 0 !important;
+        margin: 0 !important;
+        margin: 0 1rem;
+
+        li {
+            display: flex;
+
+            mat-icon {
+                color: $mainColor_2 !important;
+                margin-right: 1rem;
+            }
+
+            p {
+                color: $mainColor_2 !important;
+                font-size: 0.8rem !important;
+            }
+        }
+    }
+}
+
+.social-medias-div {
+    max-width: 50px !important;
+}

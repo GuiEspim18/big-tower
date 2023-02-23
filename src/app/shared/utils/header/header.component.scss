@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     z-index: 999;
+    background: $mainColor_1;
 }
 
 header {
@@ -93,5 +94,15 @@ a {
 
     img {
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .pages-router {
+        width: 60%;
+    }
+
+    .header-holder {
+        padding: 0 2rem;
     }
 }

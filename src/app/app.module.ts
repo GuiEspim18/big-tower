@@ -20,6 +20,12 @@ import { LoopLightCardsComponent } from './shared/utils/cards/loop-light-cards/l
 import { AboutComponent } from './pages/about/about.component';
 import { DepositionsComponent } from './shared/components/depositions/depositions.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { TextAndCardComponent } from './shared/utils/text-and-card/text-and-card.component';
+import { AddressCardComponent } from './shared/utils/cards/address-card/address-card.component';
+import { IframeGoogleMapsLocationComponent } from './shared/components/iframe-google-maps-location/iframe-google-maps-location.component';
+import { SocialMediasComponent } from './shared/utils/social-medias/social-medias.component';
+import { WhatsappButtonComponent } from './shared/utils/whatsapp-button/whatsapp-button.component';
 
 @NgModule({
   declarations: [
@@ -37,14 +43,20 @@ import { ServicesPageComponent } from './pages/services-page/services-page.compo
     LoopLightCardsComponent,
     AboutComponent,
     DepositionsComponent,
-    ServicesPageComponent
+    ServicesPageComponent,
+    ContactComponent,
+    TextAndCardComponent,
+    AddressCardComponent,
+    IframeGoogleMapsLocationComponent,
+    SocialMediasComponent,
+    WhatsappButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    ImportsModule
+    ImportsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

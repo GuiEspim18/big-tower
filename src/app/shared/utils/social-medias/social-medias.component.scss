@@ -1,0 +1,13 @@
+@import "/src/assets/css/main/main.scss";
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    mat-icon {
+        color: $secondary_4;
+        font-size: 1.2rem;
+        width: 1.2rem;
+    }
+}

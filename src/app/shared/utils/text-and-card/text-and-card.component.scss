@@ -1,0 +1,108 @@
+@import "/src/assets/css/main/main.scss";
+
+
+.div-text {
+    margin: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap !important;
+    padding: 2rem 0;
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        line-height: 3rem;
+        font-weight: 300 !important;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .fancy-font {
+        font-family: Monsieur La Doulaise;
+        font-size: 3rem !important;
+        font-weight: 500 !important;
+    }
+    
+    p {
+        color: $mainColor_2;
+        font-weight: 300 !important;
+    }
+    
+    .box-text {
+        width: 45%;
+    }
+
+    .box-card {
+        width: 35%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .div-text {
+        padding: 2rem;
+    }
+
+    .box-text {
+        width: 100% !important;
+    }
+
+    .box-card {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1265px) {
+    .div-text {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px) {
+
+    .div-text {
+        padding: 2rem;
+    }
+
+    .box-text {
+        width: 100% !important; 
+    }
+
+    .box-card {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+
+        app-address-card {
+            width: 100% !important;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    .box-text {
+        width: 100% !important;
+    }
+
+    .box-card {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+
+        app-address-card {
+            width: 100% !important;
+        }
+    }
+
+    .div-text {
+        padding: 2rem;
+    }
+}

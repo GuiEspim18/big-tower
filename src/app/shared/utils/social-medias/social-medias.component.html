@@ -1,0 +1,5 @@
+<div class="social-media">
+    <button mat-icon-button *ngFor="let item of socialMedia">
+        <mat-icon [svgIcon]="item.name" (click)="redirect(item.url)"></mat-icon>
+    </button>
+</div>

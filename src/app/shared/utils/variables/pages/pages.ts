@@ -13,6 +13,6 @@ export const pages: Array<any> = [
     },
     {
         name: "Contato",
-        path: "/home"
+        path: "/contact"
     }
 ]

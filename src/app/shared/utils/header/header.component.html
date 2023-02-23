@@ -10,6 +10,9 @@
                     <li class="router-lister" *ngFor="let item of pages" matRipple [matRippleColor]="myColor" routerLink="{{item.path}}">
                         <a>{{item.name}}</a>
                     </li>
+                    <li>
+                        <app-social-medias></app-social-medias>
+                    </li>
                 </ul>
             </div>
         </section>

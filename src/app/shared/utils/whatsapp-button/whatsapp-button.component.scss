@@ -1,0 +1,59 @@
+@import "/src/assets/css/main/main.scss";
+
+.float {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    bottom: 40px;
+    right: 40px;
+    background-color: $whatsapp;
+    border-radius: 50px;
+    z-index: 100;
+    transition: 0.3s;
+
+    &:hover {
+        filter: brightness(80%);
+    }
+
+    mat-icon {
+        transform: scale(2);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $mainColor_2;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+    
+        mat-icon {
+            transform: scale(1);
+        }
+    } 
+}
+
+@media screen and (min-width: 800px) and (max-width: 1480px) {
+    .float {
+        position: fixed;
+        width: 80px;
+        height: 80px;
+        bottom: 30px;
+        right: 30px;
+    
+        mat-icon {
+            transform: scale(1.5);
+        }
+    } 
+}
+
+.my-float {
+    margin-top: 16px;
+}

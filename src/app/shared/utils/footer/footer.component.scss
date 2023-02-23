@@ -61,6 +61,14 @@ footer {
     }
 }
 
+mat-divider {
+    background: $secondary_4;
+}
+
+.social-medias-div {
+    max-width: 50px;
+}
+
 @media screen and (max-width: 800px) {
     .text-div {
         width: 100% !important;

@@ -1,0 +1,13 @@
+<section class="card-body">
+    <div class="contacts-div">
+        <ul>
+            <li *ngFor="let item of contactsData">
+                <mat-icon>{{item.icon}}</mat-icon>
+                <p>{{item.text}}</p>
+            </li>
+        </ul>
+    </div>
+    <div class="social-medias-div">
+        <app-social-medias></app-social-medias>
+    </div>
+</section>

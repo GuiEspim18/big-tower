@@ -15,7 +15,9 @@ export class LightCardComponent implements OnInit {
 
   @Input() public image: string = "";
 
-  @Input() public fancyTitle: boolean = false
+  @Input() public fancyTitle: boolean = false;
+
+  @Input() public size: string = "3rem";
 
 
   constructor() { }

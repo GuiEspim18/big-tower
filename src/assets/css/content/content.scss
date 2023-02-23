@@ -36,6 +36,19 @@ p {
     line-height: 2rem;
 }
 
+.main-title h1 {
+    color: $mainColor_3;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title-array-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media screen and (max-width: 800px) {
 
     .content {

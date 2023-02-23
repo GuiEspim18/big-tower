@@ -8,8 +8,8 @@ export const pages: Array<any> = [
         path: "/about"
     },
     {
-        name: "Parceiros",
-        path: "/home"
+        name: "Serviços",
+        path: "/services"
     },
     {
         name: "Contato",

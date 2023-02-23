@@ -3,6 +3,10 @@
     <section class="content">
 
         <section class="container">
+            <section class="main-title">
+                <h1>Sobre</h1>
+            </section>
+            <mat-divider></mat-divider>
             <!-- Text and image component -->
             <app-text-and-image [fancyTitle]="false" [title]="title" [text]="text" [image]="image"></app-text-and-image>
 
@@ -11,14 +15,12 @@
                 <app-text-and-image [fancyTitle]="false" [title]="title2" [text]="text2" [image]="image2"
                     [flexDirection]="flexDirection"></app-text-and-image>
             </section>
+            <mat-divider></mat-divider>
         </section>
 
     </section>
 
     <!-- Depositions -->
     <app-depositions></app-depositions>
-
-    <!-- Reservation component -->
-    <app-reservation></app-reservation>
 
 </section>

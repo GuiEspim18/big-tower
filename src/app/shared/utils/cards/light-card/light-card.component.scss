@@ -12,10 +12,9 @@
 
     .card-content {
         padding: 2rem;
-        min-height: 450px !important;
+        min-height: 480px;
 
         h1 {
-            font-size: 3rem;
             font-weight: 300;
             line-height: 3.4rem;
         }
@@ -74,6 +73,7 @@
 
 @media screen and (max-width: 800px) {
     .card-content {
+        min-height: 400px !important;
         h1 {
             font-size: 3rem !important;
         }

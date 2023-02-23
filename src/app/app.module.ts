@@ -19,6 +19,7 @@ import { TextAndImageComponent } from './shared/utils/text-and-image/text-and-im
 import { LoopLightCardsComponent } from './shared/utils/cards/loop-light-cards/loop-light-cards.component';
 import { AboutComponent } from './pages/about/about.component';
 import { DepositionsComponent } from './shared/components/depositions/depositions.component';
+import { ServicesPageComponent } from './pages/services-page/services-page.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { DepositionsComponent } from './shared/components/depositions/deposition
     TextAndImageComponent,
     LoopLightCardsComponent,
     AboutComponent,
-    DepositionsComponent
+    DepositionsComponent,
+    ServicesPageComponent
   ],
   imports: [
     BrowserModule,

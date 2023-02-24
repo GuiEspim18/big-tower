@@ -26,6 +26,7 @@ import { AddressCardComponent } from './shared/utils/cards/address-card/address-
 import { IframeGoogleMapsLocationComponent } from './shared/components/iframe-google-maps-location/iframe-google-maps-location.component';
 import { SocialMediasComponent } from './shared/utils/social-medias/social-medias.component';
 import { WhatsappButtonComponent } from './shared/utils/whatsapp-button/whatsapp-button.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,7 @@ import { WhatsappButtonComponent } from './shared/utils/whatsapp-button/whatsapp
     AngularMaterialModule,
     ImportsModule,
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
